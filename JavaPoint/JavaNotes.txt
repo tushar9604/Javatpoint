@@ -1,0 +1,153 @@
+Java Notes
+A list of most important features of Java language is given below.
+Simple
+Object-Oriented
+Portable
+Platform independent
+Secured
+Robust
+Architecture neutral
+Interpreted
+High Performance
+Multithreaded
+Distributed
+Dynamic
+
+Basic concepts of OOPs are:
+1. Objects
+2. Class
+3. Inheritance
+4. Polymorphism
+5. Abstraction
+6. Encapsulation
+
+Platform independent: Java code can be run on multiple platforms, for example, Windows, Linux, Sun Solaris, Mac/OS, etc. Java code is compiled by the compiler and converted into bytecode. This bytecode is a platform-independent code because it can be run on multiple platforms, i.e., Write Once and Run Anywhere(WORA)
+
+Secured
+
+Java is best known for its security. With Java, we can develop virus-free systems. Java is secured because:
+
+    No explicit pointer
+    Java Programs run inside a virtual machine sandbox
+
+    Classloader: Classloader in Java is a part of the Java Runtime Environment(JRE) which is used to load Java classes into the Java Virtual Machine dynamically. It adds security by separating the package for the classes of the local file system from those that are imported from network sources.
+    Bytecode Verifier: It checks the code fragments for illegal code that can violate access right to objects.
+    Security Manager: It determines what resources a class can access such as reading and writing to the local disk.
+
+Java language provides these securities by default. Some security can also be provided by an application developer explicitly through SSL, JAAS, Cryptography, etc.
+
+Robust
+
+Robust simply means strong. Java is robust because:
+
+    It uses strong memory management.
+    There is a lack of pointers that avoids security problems.
+    There is automatic garbage collection in java which runs on the Java Virtual Machine to get rid of objects which are not being used by a Java application anymore.
+    There are exception handling and the type checking mechanism in Java. All these points make Java robust.
+
+Architecture-neutral
+
+Java is architecture neutral because there are no implementation dependent features, for example, the size of primitive types is fixed.
+
+In C programming, int data type occupies 2 bytes of memory for 32-bit architecture and 4 bytes of memory for 64-bit architecture. However, it occupies 4 bytes of memory for both 32 and 64-bit architectures in Java.
+
+Portable
+
+Java is portable because it facilitates you to carry the Java bytecode to any platform. It doesn't require any implementation. 
+
+High-performance
+
+Java is faster than other traditional interpreted programming languages because Java bytecode is "close" to native code. It is still a little bit slower than a compiled language (e.g., C++). Java is an interpreted language that is why it is slower than compiled languages, e.g., C, C++, etc.
+
+
+Distributed
+
+Java is distributed because it facilitates users to create distributed applications in Java. RMI and EJB are used for creating distributed applications. This feature of Java makes us able to access files by calling the methods from any machine on the internet.
+Multi-threaded
+
+A thread is like a separate program, executing concurrently. We can write Java programs that deal with many tasks at once by defining multiple threads. The main advantage of multi-threading is that it doesn't occupy memory for each thread. It shares a common memory area. Threads are important for multi-media, Web applications, etc.
+Dynamic
+
+Java is a dynamic language. It supports dynamic loading of classes. It means classes are loaded on demand. It also supports functions from its native languages, i.e., C and C++.
+
+Java supports dynamic compilation and automatic memory management (garbage collection).
+
+Data Types in Java
+
+Data types specify the different sizes and values that can be stored in the variable. There are two types of data types in Java:
+
+    Primitive data types: The primitive data types include boolean, char, byte, short, int, long, float and double.
+    Non-primitive data types: The non-primitive data types include Classes, Interfaces, and Arrays.
+
+Data Type 	Default Value 	Default size
+boolean 	false 	1 bit
+char 	'\u0000' 	2 byte
+byte 	0 	1 byte
+short 	0 	2 byte
+int 	0 	4 byte
+long 	0L 	8 byte
+float 	0.0f 	4 byte
+double 	0.0d 	8 byte
+
+Operator in Java is a symbol which is used to perform operations. For example: +, -, *, / etc.
+
+There are many types of operators in Java which are given below:
+
+    Unary Operator,
+    Arithmetic Operator,
+    Shift Operator,
+    Relational Operator,
+    Bitwise Operator,
+    Logical Operator,
+    Ternary Operator and
+    Assignment Operator.
+	
+Java keywords:
+1. abstract
+2. boolean
+3. break
+4. byte
+5. case
+6. catch
+7. char
+8. class
+9. continue
+10. default
+11. do
+12. double
+13. else
+14. enum
+15. extends
+16. final
+17. finally
+18. float
+19. for 
+20. if 
+21. implements
+22. import
+23. instanceof
+24. int
+25. interface
+26. long
+27. native
+28. new
+29. null
+30. package
+31. private
+32. protected
+33. public
+34. return
+35. short
+36. static
+37. strictfp
+38. super
+39. switch
+40. synchronized
+41. this
+42. throw
+43. throws
+44. transient
+45. try
+46. void
+47. volatile
+48. while	
