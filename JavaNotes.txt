@@ -154,3 +154,179 @@ Java keywords:
 
 
 Java OOPs Concepts
+
+OOPs (Object-Oriented Programming System)
+
+Object means a real-world entity such as a pen, chair, table, computer, watch, etc. Object-Oriented Programming is a methodology or paradigm to design a program using classes and objects. It simplifies software development and maintenance by providing some concepts:
+
+    Object
+    Class
+    Inheritance
+    Polymorphism
+    Abstraction
+    Encapsulation
+
+Apart from these concepts, there are some other terms which are used in Object-Oriented design:
+
+    Coupling
+    Cohesion
+    Association
+    Aggregation
+    Composition
+
+Java Naming conventions
+
+Java naming convention is a rule to follow as you decide what to name your identifiers such as class, package, variable, constant, method, etc.
+
+Class
+
+    It should start with the uppercase letter.
+    It should be a noun such as Color, Button, System, Thread, etc.
+    Use appropriate words, instead of acronyms.
+	
+	
+Interface
+
+    It should start with the uppercase letter.
+    It should be an adjective such as Runnable, Remote, ActionListener.
+    Use appropriate words, instead of acronyms.	
+	
+Method
+
+    It should start with lowercase letter.
+    It should be a verb such as main(), print(), println().
+    If the name contains multiple words, start it with a lowercase letter followed by an uppercase letter such as actionPerformed(). 	
+	
+Variable
+
+    It should start with a lowercase letter such as id, name.
+    It should not start with the special characters like & (ampersand), $ (dollar), _ (underscore).
+    If the name contains multiple words, start it with the lowercase letter followed by an uppercase letter such as firstName, lastName.
+    Avoid using one-character variables such as x, y, z.	
+	
+Package
+
+    It should be a lowercase letter such as java, lang.
+    If the name contains multiple words, it should be separated by dots (.) such as java.util, java.lang.	
+	
+Constant
+
+    It should be in uppercase letters such as RED, YELLOW.
+    If the name contains multiple words, it should be separated by an underscore(_) such as MAX_PRIORITY.
+    It may contain digits but not as the first letter.	
+	
+	
+There are many ways to create an object in java. They are:
+
+    By new keyword
+    By newInstance() method
+    By clone() method
+    By deserialization
+    By factory method etc.
+	
+	
+Anonymous object
+
+Anonymous simply means nameless. An object which has no reference is known as an anonymous object. It can be used at the time of object creation only.	
+
+Rules for creating Java constructor
+
+There are two rules defined for the constructor.
+
+    Constructor name must be the same as its class name
+    A Constructor must have no explicit return type
+    A Java constructor cannot be abstract, static, final, and synchronized
+
+Restrictions for the static method
+
+There are two main restrictions for the static method. They are:
+
+    The static method can not use non static data member or call non-static method directly.
+    this and super cannot be used in static context.
+
+Q) Why is the Java main method static?
+
+Ans) It is because the object is not required to call a static method. If it were a non-static method, JVM creates an object first then call main() method that will lead the problem of extra memory allocation.	
+
+Usage of java this keyword
+
+Here is given the 6 usage of java this keyword.
+
+    this can be used to refer current class instance variable.
+    this can be used to invoke current class method (implicitly)
+    this() can be used to invoke current class constructor.
+    this can be passed as an argument in the method call.
+    this can be passed as argument in the constructor call.
+    this can be used to return the current class instance from the method.
+
+Rule: Call to this() must be the first statement in constructor.
+
+Method Overloading in Java
+
+    Different ways to overload the method
+    By changing the no. of arguments
+    By changing the datatype
+    Why method overloading is not possible by changing the return type
+    Can we overload the main method
+    method overloading with Type Promotion
+
+If a class has multiple methods having same name but different in parameters, it is known as Method Overloading.
+
+If we have to perform only one operation, having same name of the methods increases the readability of the program. 
+
+Advantage of method overloading
+
+Method overloading increases the readability of the program.
+Different ways to overload the method
+
+There are two ways to overload the method in java
+
+    By changing number of arguments
+    By changing the data type
+
+ Can we overload java main() method?
+
+Yes, by method overloading. You can have any number of main methods in a class by method overloading. But JVM calls main() method which receives string array as arguments only. 	
+
+Method Overriding in Java
+
+    Understanding the problem without method overriding
+    Can we override the static method
+    Method overloading vs. method overriding
+
+If subclass (child class) has the same method as declared in the parent class, it is known as method overriding in Java.
+
+In other words, If a subclass provides the specific implementation of the method that has been declared by one of its parent class, it is known as method overriding.
+Usage of Java Method Overriding
+
+    Method overriding is used to provide the specific implementation of a method which is already provided by its superclass.
+    Method overriding is used for runtime polymorphism
+
+Rules for Java Method Overriding
+
+    The method must have the same name as in the parent class
+    The method must have the same parameter as in the parent class.
+    There must be an IS-A relationship (inheritance)
+	
+	
+How is Covariant return types implemented?
+
+Java doesn't allow the return type based overloading but JVM always allows return type based overloading. JVM uses full signature of a method for lookup/resolution. Full signature means it includes return type in addition to argument types. i.e., a class can have two or more methods differing only by return type. javac uses this fact to implement covariant return types.	
+
+Can we declare a constructor final?
+
+No, because constructor is never inherited.
+
+If you overload a static method in Java, it is the example of compile time polymorphism. 
+
+Runtime polymorphism or Dynamic Method Dispatch is a process in which a call to an overridden method is resolved at runtime rather than compile-time. 
+
+Static Binding and Dynamic Binding
+static binding and dynamic binding in java
+
+Connecting a method call to the method body is known as binding.
+
+There are two types of binding
+
+    Static Binding (also known as Early Binding).
+    Dynamic Binding (also known as Late Binding).
