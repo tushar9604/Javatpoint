@@ -330,3 +330,8 @@ There are two types of binding
 
     Static Binding (also known as Early Binding).
     Dynamic Binding (also known as Late Binding).
+
+
+Rule: If there is an abstract method in a class, that class must be abstract.
+
+Rule: If you are extending an abstract class that has an abstract method, you must either provide the implementation of the method or make this class abstract.
