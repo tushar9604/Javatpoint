@@ -335,3 +335,11 @@ There are two types of binding
 Rule: If there is an abstract method in a class, that class must be abstract.
 
 Rule: If you are extending an abstract class that has an abstract method, you must either provide the implementation of the method or make this class abstract.
+
+Rule: There can be only one public class in a java source file and it must be saved by the public class name.
+
+Note: A class cannot be private or protected except nested class.
+
+Java Access Modifiers with Method Overriding
+
+If you are overriding any method, overridden method (i.e. declared in subclass) must not be more restrictive.
