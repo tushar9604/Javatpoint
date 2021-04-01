@@ -343,3 +343,7 @@ Note: A class cannot be private or protected except nested class.
 Java Access Modifiers with Method Overriding
 
 If you are overriding any method, overridden method (i.e. declared in subclass) must not be more restrictive.
+
+After a string literal, all the + will be treated as string concatenation operator.
+
+Note: Java StringBuffer class is thread-safe i.e. multiple threads cannot access it simultaneously. So it is safe and will result in an order.
